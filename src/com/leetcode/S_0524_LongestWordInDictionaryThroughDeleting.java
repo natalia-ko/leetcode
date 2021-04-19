@@ -23,8 +23,6 @@ import java.util.List;
 //The length of all the strings in the input won't exceed 1,000.
 public class S_0524_LongestWordInDictionaryThroughDeleting {
     public static void main(String[] args) {
-        //"aewfafwafjlwajflwajflwafj"
-        //["apple","ewaf","awefawfwaf","awef","awefe","ewafeffewafewf"]
 
         String s = "aewfafwafjlwajflwajflwafj";
         List<String> d = new ArrayList<String>() {{
@@ -42,36 +40,6 @@ public class S_0524_LongestWordInDictionaryThroughDeleting {
     }
 
     public static String findLongestWord(String s, List<String> d) {
-//        String result = "";
-//        Stack<Integer> indexToDel = new Stack<>();
-//
-//        for (int i = 0; i < d.size(); i++) {
-//            if (!s.contains(d.get(i))) {
-//                int index = 0;
-//                for (char c : d.get(i).toCharArray()) {
-//                    if (s.indexOf(c, index) >= 0) {
-//                        index = s.indexOf(c, index);
-//                    } else {
-//                        indexToDel.push(i);
-//                        break;
-//                    }
-//                }
-//            }
-//        }
-//        while (!indexToDel.empty()) {
-//            int ind = indexToDel.pop();
-//            d.remove(ind);
-//        }
-//
-//        for (String value : d) {
-//            if (value.length() > result.length() || value.length() == result.length() && value.compareTo(result) < 0) {
-//                result = value;
-//            }
-//        }
-//
-//        return result;
-//    }
-//}
 
         String result = "";
         for (String word : d) {
